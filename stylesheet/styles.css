@@ -1,0 +1,198 @@
+body { /* side-woide font */
+    font-family: arial, sans-serif;
+    background-image: linear-gradient(to top right, #D3CCE3, #E9E4F0);
+    margin: 0;
+    height: 100%;
+}
+header { /* nav bar */
+    background:#333;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.nav-links { /* nav links without bullets and is evenly spaced and wraps on small screens */
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+}
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.nav-links li a:hover { /* hover effect for nav links */
+    background: #444;
+    border-radius: 5px;
+}
+
+main { /* main content area */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.frame { /* background color to better UI */
+    padding: 2rem 2rem;
+    background-color: #B8B3C6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    height: 620px;
+    width: 100%;
+}
+
+.title-box {
+    text-align:center;
+    width: fit-content;
+    width: 100%;
+    height: 170px;
+}
+
+.title-box h1{
+    font-weight: bold;
+}
+.title-box h1 span {
+    font-size: 3rem;
+    color: white;
+}
+.content-box { /* contains image and text */
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.8rem;
+    align-items: flex-start;
+    
+}
+figure {
+    display:inline-block;
+    margin: 1rem;
+}
+img {
+    border: 6px solid #333;
+    border-radius: 30px;
+    width: 350px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+.text {
+    display: inline-block;
+    margin:1rem;
+    font-size: 1.2rem;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer {
+    background:#333;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 1rem 1rem;
+}
+
+footer a:hover {
+    background: #444;
+    border-radius: 5px;
+}
+
+.gallery {
+    margin-top: -90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.gallery img {
+    margin: 0.4rem;
+    width: 350px;
+    height: 200px;
+    display: block;
+}
+
+table {
+    margin-top:30px;
+    width: 860px;
+}
+th, td {
+    padding: 7px 10px 15px 10px;
+    background-color:white;
+}
+th {
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
+}
+
+th.description {
+    width: 500px;
+    font-weight: normal;
+    font-size: 0.9rem;
+    text-transform: none;
+}
+.frame:has(contact-form) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.frame:has(contact-form) .title-box {
+    align-self: center;
+    text-align: center;
+}
+
+.contact-form {
+    margin: 80px 0 0 auto;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    flex-direction: column;
+    width: 100%;
+    font-size: 2rem;
+}
+.contact-form > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem 1rem;
+    
+}
+.map-box {
+    margin-top: 30px;
+    padding: 1rem;
+    background-color: gray;
+    border: 6px solid #333;
+    border-radius: 10px;
+    width: 860px;
+    height: 450px;
+}
+
+p {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 400;
+}
